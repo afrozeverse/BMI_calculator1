@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head1">
+            <h1>BMI Calculaor</h1>
+        </div>
+        <div class="categories-container">
+            <div class="categories-under-weight">
+                <div></div>
+                <p>Less than 18.8</p>
+                <p>Underweight</p>
+            </div>
+            <div class="categories-normal-weight">
+                <div></div>
+                <p>18.5 - 24.9</p>
+                <p>Normal Weight</p>
+            </div>
+            <div class="categories-over-weight">
+                <div></div>
+                <p>24 - 29.9</p>
+                <p>Overweight</p>
+            </div>
+            <div class="categories-obese">
+                <div></div>
+                <p>30 and above</p>
+                <p>Obese</p>
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="input-height">
+                <label for="height"><p>Height(Centimeter)</p><input type="number" name="" id="height"> </label>
+            </div>
+            <div class="input-weight">
+                <label for="weight"><p>Weight (Kg)</p><input type="number" name="" id="weight"></label>
+            </div>
+            <div class="input-age">
+                <label for="age"><p>Age</p><input type="number" name="" id="age"></label>
+            </div>
+            <div class="input-gender">
+                <label for="gender"> <p>Gender</p>
+                <select name="" id="gender">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Transgender Male</option>
+                    <option value="">Transgender Female</option>
+                    <option value="">Non-Binary</option>
+                    <option value="">Others</option>
+                </select>
+                </label>
+            </div>
+        </div>
+        <div class="result-container">
+            <p>Your BMI is: <input type="number" id="result"></p>
+        </div>
+                            <div class="graphics">
+            <h1 id="finalResult"></h1>
+        </div>
+                <div class="buttons">
+            <button onclick="calculate()">Calculate</button>
+            <button>Reset</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
