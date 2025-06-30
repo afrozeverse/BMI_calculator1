@@ -148,12 +148,10 @@ border: 2px solid white;
 }
 .head1
 {
-    background-color: #f0f3bd;
+    background-color: #05668d;
     padding: 20px;
     text-align: center;
-    color:#05668d ;
-    position:sticky;
-    top: 0px;
+    color:white ;
 }
 
 @media (min-width: 1024px) {
